@@ -44,20 +44,24 @@ Elle offre une interface simple et intuitive pour la **création**, la **modific
 
 ## 📂 Installation et configuration
 
-1️⃣ Cloner le projet
-```bash
+### 1️⃣ Cloner le projet
+```
 git clone https://github.com/EbroVital/stage_app.git
 cd stage_app
+```
 
-2️⃣ Installer les dépendances
+### 2️⃣ Installer les dépendances
+```
 composer install
 npm install && npm run build
+```
 
-3️⃣ Configurer l’environnement
+### 3️⃣ Configurer l’environnement
+```
 cp .env.example .env
-
+```
 Puis modifier les paramètres :
-
+```
 APP_NAME="StageApp"
 APP_URL=http://localhost:8000
 DB_CONNECTION=mysql
@@ -66,13 +70,18 @@ DB_PORT=3306
 DB_DATABASE=stageapp
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
-4️⃣ Générer la clé et migrer la base
+### 4️⃣ Générer la clé et migrer la base
+```
 php artisan key:generate
 php artisan migrate --seed
+```
 
-5️⃣ Lancer le serveur
+### 5️⃣ Lancer le serveur
+```
 php artisan serve
+```
 
 Accéder à l’application : 👉 http://localhost:8000
 
