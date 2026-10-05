@@ -2,7 +2,7 @@
 
 @section('title', 'Liste des avis')
 @section('content')
-<div class="container mt-4">
+<div class="container m-1">
     {{-- <h2 class="mb-4">Liste des avis</h2> --}}
 
     @if(session('success'))
@@ -23,6 +23,7 @@
                 <th class="text-center">Président</th>
                 <th class="text-center">Année budgétaire</th>
                 <th class="text-center" colspan="3">Actions</th>
+
             </tr>
         </thead>
         <tbody>
