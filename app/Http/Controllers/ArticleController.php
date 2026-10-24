@@ -11,7 +11,7 @@ use NumberFormatter;
 
 function convertirMontantEnLettres($montant)
 {
-    $f = new \NumberFormatter("fr", \NumberFormatter::SPELLOUT);
+    $f = new NumberFormatter("fr", NumberFormatter::SPELLOUT);
     return ucfirst($f->format($montant));
 }
 
