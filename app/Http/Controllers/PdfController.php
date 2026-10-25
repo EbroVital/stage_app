@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use NumberToWords\NumberToWords;
+use Illuminate\Support\Facades\Storage;
 
 function dateEnLettres($date)
 {
@@ -197,7 +198,7 @@ class PdfController extends Controller
                 $filePath = storage_path('app/public/pdfs/' . $fileName);
 
                 // Sauvegarde physique
-                $pdf->save($filePath);
+                // $pdf->save($filePath);
 
                 // Enregistrement en BDD
                 ModelsPdf::create([
@@ -208,7 +209,7 @@ class PdfController extends Controller
                 ]);
 
                 // Téléchargement
-                return response()->download($filePath);
+                return response()->download($fileName);
             }
 
             elseif ($type == 'deliberation') {
@@ -238,7 +239,7 @@ class PdfController extends Controller
                 $fileName = 'deliberation_' . $doc->id . '.pdf';
                 $filePath = storage_path('app/public/pdfs/' . $fileName);
 
-                $pdf->save($filePath);
+                // $pdf->save($filePath);
 
                 ModelsPdf::create([
                     'type' => 'deliberation',
@@ -247,7 +248,7 @@ class PdfController extends Controller
                     'user_id' => auth()->id(),
                 ]);
 
-                return response()->download($filePath);
+                return response()->download($fileName);
             }
 
             abort(404);
