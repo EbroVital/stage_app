@@ -92,3 +92,12 @@ php artisan test
 - `resources/views` : vues Blade.
 - `routes/web.php` : routes de l’application web.
 
+## Capture d'écran
+<img width="1366" height="768" alt="CONNEXION" src="https://github.com/user-attachments/assets/9ad0c0b4-919c-4c1d-88d6-6e2f4d17c3f7" />
+<img width="1366" height="768" alt="TB" src="https://github.com/user-attachments/assets/d9c5486e-15cd-40ec-9e81-7c255edef24c" />
+<img width="1366" height="768" alt="avis" src="https://github.com/user-attachments/assets/a70bfed9-a824-416f-8dff-acbf6c236445" />
+<img width="1366" height="768" alt="delib" src="https://github.com/user-attachments/assets/5f7619e4-e57b-4219-a80a-9dfc776fbdfe" />
+<img width="1366" height="768" alt="pdf" src="https://github.com/user-attachments/assets/712ba34f-b651-4c85-b6f0-a440d3cca7e4" />
+
+
+
