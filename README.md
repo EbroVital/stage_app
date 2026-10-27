@@ -92,6 +92,12 @@ php artisan test
 - `resources/views` : vues Blade.
 - `routes/web.php` : routes de l’application web.
 
+----
+
+## Compte pour le test
+Email : admin@test.com
+Password : password
+
 ## Capture d'écran
 <img width="1366" height="768" alt="CONNEXION" src="https://github.com/user-attachments/assets/9ad0c0b4-919c-4c1d-88d6-6e2f4d17c3f7" />
 <img width="1366" height="768" alt="TB" src="https://github.com/user-attachments/assets/d9c5486e-15cd-40ec-9e81-7c255edef24c" />
